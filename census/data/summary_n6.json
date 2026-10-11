@@ -1,0 +1,148 @@
+{
+ "N": 6,
+ "mode": "all",
+ "candidates": "all |S| >= 2",
+ "measure": "uniform doubles in [0,1) via random.Random; u = s = one random state per TPM",
+ "seed_base": 26260926,
+ "n_rows": 500,
+ "workers": 4,
+ "wall_seconds": 129.057985207,
+ "seconds_per_row_cpu": {
+  "mean": 1.0129128000000003,
+  "max": 1.4833
+ },
+ "cases": {
+  "A0": {
+   "count": 0,
+   "pct": 0.0,
+   "wilson95_pct": [
+    4.336808689942018e-17,
+    0.7624340461552241
+   ]
+  },
+  "A": {
+   "count": 0,
+   "pct": 0.0,
+   "wilson95_pct": [
+    4.336808689942018e-17,
+    0.7624340461552241
+   ]
+  },
+  "B1": {
+   "count": 4,
+   "pct": 0.8,
+   "wilson95_pct": [
+    0.311531518006224,
+    2.0387035834105167
+   ]
+  },
+  "B2": {
+   "count": 496,
+   "pct": 99.2,
+   "wilson95_pct": [
+    97.96129641658948,
+    99.68846848199378
+   ]
+  },
+  "C": {
+   "count": 0,
+   "pct": 0.0,
+   "wilson95_pct": [
+    4.336808689942018e-17,
+    0.7624340461552241
+   ]
+  },
+  "B": {
+   "count": 500,
+   "pct": 100.0,
+   "wilson95_pct": [
+    99.23756595384478,
+    100.0
+   ]
+  },
+  "B-multi": {
+   "count": 120,
+   "pct": 24.0,
+   "wilson95_pct": [
+    20.4637860033381,
+    27.93267970066262
+   ]
+  },
+  "B-notmax": {
+   "count": 0,
+   "pct": 0.0,
+   "wilson95_pct": [
+    4.336808689942018e-17,
+    0.7624340461552241
+   ]
+  }
+ },
+ "univ_pos": {
+  "count": 128,
+  "pct": 25.6,
+  "wilson95_pct": [
+   21.970770819171886,
+   29.601296995351873
+  ]
+ },
+ "univ_zero_clamp_side": {
+  "both": 108,
+  "effect": 93,
+  "cause": 171
+ },
+ "any_pair_pos": {
+  "count": 500,
+  "pct": 100.0,
+  "wilson95_pct": [
+   99.23756595384478,
+   100.0
+  ]
+ },
+ "pair_pos_rate": {
+  "count": 3140,
+  "pct": 41.86666666666667,
+  "wilson95_pct": [
+   40.75459420818519,
+   42.987066557236474
+  ]
+ },
+ "triple_pos_rate": {
+  "count": 2720,
+  "pct": 27.2,
+  "wilson95_pct": [
+   26.3367145293053,
+   28.080795796397545
+  ]
+ },
+ "mean_n_pos_cands": 16.978,
+ "n_complexes_distribution": {
+  "1": 380,
+  "2": 117,
+  "3": 3
+ },
+ "complex_size_histogram": {
+  "2": 379,
+  "5": 35,
+  "3": 140,
+  "4": 65,
+  "6": 4
+ },
+ "argmax_size_distribution": {
+  "2": 271,
+  "5": 35,
+  "3": 126,
+  "4": 64,
+  "6": 4
+ },
+ "n_argmax_distribution": {
+  "1": 500
+ },
+ "checks": {
+  "rows_borderline_redecided_zero": 0,
+  "rows_borderline_redecided_cmp": 0,
+  "rows_unresolved": 0,
+  "min_margin_over_rows": 5.856706949613953e-06,
+  "min_gap_over_rows": 3.3194007890830304e-05,
+  "tol": 1e-09
+ }
+}

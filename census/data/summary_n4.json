@@ -1,0 +1,146 @@
+{
+ "N": 4,
+ "mode": "all",
+ "candidates": "all |S| >= 2",
+ "measure": "uniform doubles in [0,1) via random.Random; u = s = one random state per TPM",
+ "seed_base": 24260926,
+ "n_rows": 4000,
+ "workers": 4,
+ "wall_seconds": 15.549351709999996,
+ "seconds_per_row_cpu": {
+  "mean": 0.015256474999999992,
+  "max": 0.0516
+ },
+ "cases": {
+  "A0": {
+   "count": 0,
+   "pct": 0.0,
+   "wilson95_pct": [
+    5.421010862427522e-18,
+    0.09594432897014865
+   ]
+  },
+  "A": {
+   "count": 101,
+   "pct": 2.525,
+   "wilson95_pct": [
+    2.0824746339554863,
+    3.058624506401671
+   ]
+  },
+  "B1": {
+   "count": 203,
+   "pct": 5.075,
+   "wilson95_pct": [
+    4.436880356817323,
+    5.799325622762358
+   ]
+  },
+  "B2": {
+   "count": 3696,
+   "pct": 92.4,
+   "wilson95_pct": [
+    91.53748364136061,
+    93.18115556767272
+   ]
+  },
+  "C": {
+   "count": 0,
+   "pct": 0.0,
+   "wilson95_pct": [
+    5.421010862427522e-18,
+    0.09594432897014865
+   ]
+  },
+  "B": {
+   "count": 3899,
+   "pct": 97.475,
+   "wilson95_pct": [
+    96.94137549359834,
+    97.91752536604452
+   ]
+  },
+  "B-multi": {
+   "count": 316,
+   "pct": 7.9,
+   "wilson95_pct": [
+    7.103904127275161,
+    8.776880997717704
+   ]
+  },
+  "B-notmax": {
+   "count": 0,
+   "pct": 0.0,
+   "wilson95_pct": [
+    5.421010862427522e-18,
+    0.09594432897014865
+   ]
+  }
+ },
+ "univ_pos": {
+  "count": 996,
+  "pct": 24.9,
+  "wilson95_pct": [
+   23.584406953536007,
+   26.26375709960701
+  ]
+ },
+ "univ_zero_clamp_side": {
+  "both": 1047,
+  "cause": 1150,
+  "effect": 807
+ },
+ "any_pair_pos": {
+  "count": 3803,
+  "pct": 95.075,
+  "wilson95_pct": [
+   94.36009528021545,
+   95.70341090721797
+  ]
+ },
+ "pair_pos_rate": {
+  "count": 9899,
+  "pct": 41.24583333333333,
+  "wilson95_pct": [
+   40.624477918739075,
+   41.86999069700871
+  ]
+ },
+ "triple_pos_rate": {
+  "count": 4500,
+  "pct": 28.125,
+  "wilson95_pct": [
+   27.433650680968384,
+   28.826850786684727
+  ]
+ },
+ "mean_n_pos_cands": 3.84875,
+ "n_complexes_distribution": {
+  "1": 3583,
+  "2": 316,
+  "0": 101
+ },
+ "complex_size_histogram": {
+  "2": 3181,
+  "4": 203,
+  "3": 831
+ },
+ "argmax_size_distribution": {
+  "2": 2865,
+  "4": 203,
+  "3": 831,
+  "0": 101
+ },
+ "n_argmax_distribution": {
+  "1": 3899,
+  "11": 101
+ },
+ "checks": {
+  "rows_borderline_redecided_zero": 0,
+  "rows_borderline_redecided_cmp": 0,
+  "rows_unresolved": 0,
+  "min_margin_over_rows": 7.512378397914491e-06,
+  "min_gap_over_rows": 2.333599722370727e-05,
+  "tol": 1e-09
+ }
+}

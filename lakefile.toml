@@ -4,7 +4,7 @@ keywords = ["math"]
 defaultTargets = ["IIT"]
 
 [leanOptions]
-pp.unicode.fun = true
+pp.unicode.fun = true # pretty-prints `fun a ↦ b`
 autoImplicit = false
 relaxedAutoImplicit = false
 weak.linter.mathlibStandardSet = true
@@ -16,3 +16,7 @@ scope = "leanprover-community"
 
 [[lean_lib]]
 name = "IIT"
+# The two groups of main theorems cannot be imported into one file (PairCLT and BigPhiStats both
+# define IIT.Census.Vp), so the library has one root per main-theorem file.
+roots = ["IIT.Census.UnivZero", "IIT.Census.Ties", "IIT.Census.B2Limit", "IIT.Census.PhiZeroExample",
+         "IIT.Census.LawMain", "IIT.Census.BigPhiMain", "IIT.Census.B1PhiGoalFinal"]
