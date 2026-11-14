@@ -272,7 +272,7 @@ lemma aS_lower : ∑ i : Fin KS, (((if (cS i).x1 ≤ 1 / 2 then (cS i).a else 0 
   rw [e, exS_lower_mass]; norm_num
 
 /-- On `EX`, at least `N/2 - KS²` entries of row `s` lie below `1/2`. -/
-lemma EX_s_lower {w : Param N} (hw : w ∈ EX N s r0 x) :
+lemma EX_s_lower {s r0 : State N} {x : Fin N} {w : Param N} (hw : w ∈ EX N s r0 x) :
     (N : ℝ) / 2 - (KS : ℝ) ^ 2 ≤ ((univ.filter fun k => w s k ∈ Set.Iio (1 / 2 : ℝ)).card : ℝ) := by
   classical
   have hv : ∀ j, (univ.filter fun i => w s i ∈ (exIS ∘ cS) j).card = nS N j := fun j =>

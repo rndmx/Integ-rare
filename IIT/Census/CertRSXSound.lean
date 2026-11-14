@@ -8,6 +8,8 @@ import IIT.Census.B1RegRS
 namespace IIT
 namespace Census
 
+variable {N : ℕ}
+
 open Finset MeasureTheory
 
 lemma gX_pos (lam : ℕ) {c y : ℝ} (hy : 0 < y) (hy1 : y ≤ 1) (hc : 0 < c) (hcy : y ≤ 2 * c) :

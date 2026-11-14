@@ -1,7 +1,7 @@
 name = "IIT"
 version = "0.1.0"
 keywords = ["math"]
-defaultTargets = ["IIT"]
+defaultTargets = ["IIT", "IIT2", "IITCompare"]
 
 [leanOptions]
 pp.unicode.fun = true # pretty-prints `fun a ↦ b`
@@ -20,3 +20,10 @@ name = "IIT"
 # define IIT.Census.Vp), so the library has one root per main-theorem file.
 roots = ["IIT.Census.UnivZero", "IIT.Census.Ties", "IIT.Census.B2Limit", "IIT.Census.PhiZeroExample",
          "IIT.Census.LawMain", "IIT.Census.BigPhiMain", "IIT.Census.B1PhiGoalFinal"]
+globs = ["IIT.+"]
+
+[[lean_lib]]
+name = "IIT2"
+
+[[lean_lib]]
+name = "IITCompare"

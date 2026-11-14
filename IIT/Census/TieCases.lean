@@ -58,7 +58,7 @@ lemma EE {s : State N} {S S' : Finset (Fin N)} {k : Fin N} (hk : k ∈ S') (hkS 
 
 /-! ### E–C, some unit of the effect state is at its current value -/
 
-lemma EC_single {s : State N} {S S'' : Finset (Fin N)} {k : Fin N} (hk : k ∈ S'')
+lemma EC_single {s t'' : State N} {S S'' : Finset (Fin N)} {k : Fin N} (hk : k ∈ S'')
     (htk : t'' k = s k) (θ : SysPartition N S) (θ'' : SysPartition N S'') (t : State N)
     (heq : ∀ z ∈ openCube N, BE (tpmOf z) s S'' θ'' t'' = BC (tpmOf z) s S θ t) :
     ∀ z ∈ openCube N, BE (tpmOf z) s S'' θ'' t'' = 0 := by
